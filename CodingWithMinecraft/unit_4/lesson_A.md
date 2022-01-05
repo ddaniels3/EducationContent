@@ -29,20 +29,8 @@ Go into Minecraft, press **T** to open the chat window, and enter **chickens** i
 Click the (+) next to chickens.  This allows you to specify the number of chickens you want to spawn.  This is a variable. 
 By default, it is a number named num1.
 
+
 ## Step 7
-From the variable drawer, move the variable num1 into the repeat.
-Now if you enter **chickens 15** in the chat window, the variable **num1** will take the value **15**. 
-
-### ~ tutorialhint
-``` blocks
-player.onChat("chickens" num1, function () {
-    for (let index = 0; index < num1; index++) {
-        mobs.spawn(CHICKEN, pos(0, 10, 0))
-    }
-})
-```
-
-## Step 8
 More chickens! From ``||Variables:VARIABLES||``, replace the number **4** in ``||Loops:repeat||`` with ``||Variables:num1||``.
 
 ### ~ tutorialhint
